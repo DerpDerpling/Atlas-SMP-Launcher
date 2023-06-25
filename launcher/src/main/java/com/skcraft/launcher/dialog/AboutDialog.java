@@ -35,7 +35,7 @@ public class AboutDialog extends JDialog {
         container.setLayout(new MigLayout("insets dialog"));
 
         container.add(new JLabel("<html>Licensed under GNU General Public License, version 3."), "wrap, gapbottom unrel");
-        container.add(new JLabel("<html>You are using the Hobbitcraft Launcher, an open-source<br>" +
+        container.add(new JLabel("<html>You are using the Atlas Launcher, an open-source<br>" +
                 "customizable launcher platform that anyone can use."), "wrap, gapbottom unrel");
         container.add(new JLabel("<html>By Derpy."), "wrap, gapbottom unrel");
 
@@ -51,7 +51,7 @@ public class AboutDialog extends JDialog {
         getRootPane().registerKeyboardAction(ActionListeners.dispose(this), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_IN_FOCUSED_WINDOW);
 
         okButton.addActionListener(ActionListeners.dispose(this));
-        sourceCodeButton.addActionListener(ActionListeners.openURL(this, "https://github.com/HobbitcraftServer/Launcher"));
+        sourceCodeButton.addActionListener(ActionListeners.openURL(this, "https://github.com/DerpDerpling/Atlas-SMP-Launcher"));
     }
 }
 
