@@ -127,9 +127,9 @@ public class PackManagerController {
     private void startServer() throws Exception {
         testServer.start();
 
-        launcher.getProperties().setProperty("newsUrl", "http://localhost:" + testServer.getLocalPort() + "/news.html");
-        launcher.getProperties().setProperty("packageListUrl", "http://localhost:" + testServer.getLocalPort() + "/packages.json");
-        launcher.getProperties().setProperty("selfUpdateUrl", "http://localhost:" + testServer.getLocalPort() + "/latest.json");
+        launcher.getProperties().setProperty("newsUrl", "https://localhost:" + testServer.getLocalPort() + "/news.html");
+        launcher.getProperties().setProperty("packageListUrl", "https://localhost:" + testServer.getLocalPort() + "/packages.json");
+        launcher.getProperties().setProperty("selfUpdateUrl", "https://localhost:" + testServer.getLocalPort() + "/latest.json");
     }
 
     private void loadWorkspace() {
